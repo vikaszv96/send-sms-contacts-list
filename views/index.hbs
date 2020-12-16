@@ -1,0 +1,24 @@
+
+<main role="main" class="container">
+  <div class="jumbotron">
+    <h1>List of Contacts</h1>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">SNo.</th>
+      <th scope="col">Full Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <form method="POST"  enctype="multipart/form-data">
+    {{# each element}}
+    <tr>
+      <td scope="row">{{this.ID}}</td>
+      <td><a class="nav-link" href="/contactsInfo/{{this.ID}}">{{this.name}}</a></td>
+    </tr>
+    {{/each}}
+  </form>
+  </tbody>
+</table>
+  </div>
+</main>

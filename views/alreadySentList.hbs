@@ -1,0 +1,27 @@
+
+<main role="main" class="container">
+  <div class="jumbotron">
+    <h1>List of messages sent (Descending order by Date)</h1>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Time</th>
+      <th scope="col">OTP sent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <form method="POST"  enctype="multipart/form-data"> -->
+    {{# each newAddedList}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.time}}</td>
+      <td><i>{{this.OTP}}</i></td>
+    </tr>
+    {{/each}}
+
+  <!-- </form> -->
+  </tbody>
+</table>
+  </div>
+</main>

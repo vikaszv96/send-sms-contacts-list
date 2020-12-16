@@ -1,0 +1,25 @@
+
+<main role="main" class="container">
+  <div class="jumbotron">
+    <h1>Contact info page</h1>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Full Name</th>
+      <th scope="col">Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <form method="POST"  enctype="multipart/form-data">
+    <tr>
+      <td>{{element.name}}</td>
+      <td>{{element.mobile}}</td>
+    </tr>
+    <tr>
+      <td><a class="nav-link" href="/compose/{{element.ID}}"><button type="button" class="btn btn-primary">Send Message</button></a></td>
+    </tr>
+  </form>
+  </tbody>
+</table>
+  </div>
+</main>

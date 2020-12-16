@@ -1,0 +1,26 @@
+
+<main role="main" class="container">
+  <div class="jumbotron">
+    <h1>New Message Screen</h1>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <form method="post" action="/sendSMS/{{Id}}/{{random}}" enctype="multipart/form-data">
+    <tr>
+      <td><input type="text" name="OTP" class="form-control" value="Hi. Your OTP is : {{random}}" readonly></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+</td>
+    </tr>
+  </form>
+  </tbody>
+</table>
+  </div>
+</main>
